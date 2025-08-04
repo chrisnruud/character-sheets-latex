@@ -283,3 +283,7 @@ TSWLatexianTemp*
 
 # LaTeX linter atifacts
 **.bak0
+
+# Intellij IDEA artifacts
+.idea
+*.iml

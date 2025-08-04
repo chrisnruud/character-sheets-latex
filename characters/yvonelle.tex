@@ -18,52 +18,20 @@
 \PlayerName{Chris Aurora}
 \Race{Half - Drow}
 \Alignment{Chaotic good}
-\XP{14220}
+\XP{14940}
 
-% Ability scores
-\StrengthScore{13}
-\DexterityScore{20}
-\ConstitutionScore{16}
-\IntelligenceScore{14}
-\WisdomScore{15}
-\CharismaScore{18}
+% Ability scores - using Set commands for automatic modifier calculation
+\SetStrength{13}
+\SetDexterity{20}
+\SetConstitution{16}
+\SetIntelligence{14}
+\SetWisdom{15}
+\SetCharisma{18}
 
-% Ability modifiers
-\StrengthModifier{1}
-\DexterityModifier{5}
-\ConstitutionModifier{3}
-\IntelligenceModifier{2}
-\WisdomModifier{2}
-\CharismaModifier{4}
+% Set Proficiency Bonus
+\SetProficiency{3}
 
-% Saving Throws
-\StrengthSavingThrowModifier{6}
-\DexteritySavingThrowModifier{10}
-\ConstitutionSavingThrowModifier{8}
-\IntelligenceSavingThrowModifier{7}
-\WisdomSavingThrowModifier{10}
-\CharismaSavingThrowModifier{12}
-
-\AcrobaticsSkillModifier{8}
-\AnimalHandlingSkillModifier{2}
-\ArcanaSkillModifier{2}
-\AthleticsSkillModifier{1}
-\DeceptionSkillModifier{4}
-\HistorySkillModifier{2}
-\InsightSkillModifier{5}
-\IntimidationSkillModifier{4}
-\InvestigationSkillModifier{2}
-\MedicineSkillModifier{2}
-\NatureSkillModifier{2}
-\PerceptionSkillModifier{5}
-\PerformanceSkillModifier{4}
-\PersuasionSkillModifier{7}
-\ReligionSkillModifier{2}
-\SleightOfHandSkillModifier{5}
-\StealthSkillModifier{5}
-\SurvivalSkillModifier{2}
-
-% Proficiencies
+% Saving Throw Proficiencies
 \SetStrengthProficiency{0}
 \SetDexterityProficiency{0}
 \SetConstitutionProficiency{0}
@@ -71,6 +39,16 @@
 \SetWisdomProficiency{1}
 \SetCharismaProficiency{1}
 
+% Saving Throws - using Set commands for automatic calculation
+% Bonus from Aura of Protection (+4) and Ring of Protection (+1) = +5 total
+\SetStrengthSavingThrowModifier{5}
+\SetDexteritySavingThrowModifier{5}
+\SetConstitutionSavingThrowModifier{5}
+\SetIntelligenceSavingThrowModifier{5}
+\SetWisdomSavingThrowModifier{5}
+\SetCharismaSavingThrowModifier{5}
+
+% Skill Proficiencies
 \SetAcrobaticsProficiency{1}
 \SetAnimalHandlingProficiency{0}
 \SetArcanaProficiency{0}
@@ -90,8 +68,27 @@
 \SetStealthProficiency{0}
 \SetSurvivalProficiency{0}
 
+% Skill modifiers - using Set commands for automatic calculation
+\SetAcrobaticsSkillModifier{0}
+\SetAnimalHandlingSkillModifier{0}
+\SetArcanaSkillModifier{0}
+\SetAthleticsSkillModifier{0}
+\SetDeceptionSkillModifier{0}
+\SetHistorySkillModifier{0}
+\SetInsightSkillModifier{0}
+\SetIntimidationSkillModifier{0}
+\SetInvestigationSkillModifier{0}
+\SetMedicineSkillModifier{0}
+\SetNatureSkillModifier{0}
+\SetPerceptionSkillModifier{0}
+\SetPerformanceSkillModifier{0}
+\SetPersuasionSkillModifier{0}
+\SetReligionSkillModifier{0}
+\SetSleightOfHandSkillModifier{0}
+\SetStealthSkillModifier{0}
+\SetSurvivalSkillModifier{0}
+
 \Inspiration{}
-\Proficiency{3}
 \Perception{15}
 
 \ArmorClass{21}
@@ -126,10 +123,10 @@
 \textbf{Other}: Lyre. \\}
 
 \Equipment{
-20 arrows, One Silver arrow. Dagger, Fine Clothes, Cold Weather Gear, Backpack, a bedroll, a mess kit, a tinderbox, 10 torches, 10 days of rations, and a waterskin. 50 feet of hempen rope. Pouch, Lyre. Holy Symbol
-\\ \footnotesize{
-\textbf{Weight:} 96 lb \textbf{Capacity:} 195 lb
-}}
+    20 arrows, One Silver arrow. Dagger, Fine Clothes, Cold Weather Gear, Backpack, a bedroll, a mess kit, a tinderbox, 10 torches, 10 days of rations, and a waterskin. 50 feet of hempen rope. Pouch, Lyre. Holy Symbol
+    \\ \footnotesize{
+        \textbf{Weight:} 96 lb \textbf{Capacity:} 195 lb
+    }}
 
 \PersonalityTraits{I honor Eilistraee through practices that are foreign to this land. I make treasure of all the bright moments that life brings me, and always try to bring a smile to people's faces, be they my friends or strangers.}
 
@@ -140,21 +137,21 @@
 \Flaws{I don't really feel I belong to anyone. I secretly resent the human side of my blood. I can hardly resist the temptation to join revelries and pleasurable events when the opportunity arises.}
 
 \FeaturesTraits{
-\textbf{Features} \\
-Darkvision 60' \\
-Channel Divinity (1x/SR) \\
-Channel Divinity: Eilistraee's Dance \\
-Channel Divinity: Turn the Faithless \\
-Drow Magic (PHB 24) \\
-Dueling \\
-Divine Sense (Detect Celestial/Fiend/Undead 60',  5 / long rest) \\
-Lay on hands 30 \\
-Divine Smite \\
-Divine Health (immune to disease) \\
-Elven Accuracy \\
-Extra Attack (2) \\
-Aura of Protection (10' , +4) \\
-Oath of the Darksong Knight (variant) \\
+    \textbf{Features} \\
+    Darkvision 60' \\
+    Channel Divinity (1x/SR) \\
+    Channel Divinity: Eilistraee's Dance \\
+    Channel Divinity: Turn the Faithless \\
+    Drow Magic (PHB 24) \\
+    Dueling \\
+    Divine Sense (Detect Celestial/Fiend/Undead 60',  5 / long rest) \\
+    Lay on hands 30 \\
+    Divine Smite \\
+    Divine Health (immune to disease) \\
+    Elven Accuracy \\
+    Extra Attack (2) \\
+    Aura of Protection (10' , +4) \\
+    Oath of the Darksong Knight (variant) \\
 }
 
 
@@ -169,7 +166,7 @@ Oath of the Darksong Knight (variant) \\
 
 % background
 
-\CharacterAppearance{\includegraphics[width=5.75cm]{characters/images/yvonelle.jpeg}
+\CharacterAppearance{\includegraphics[width=5.75cm]{characters/images/yvonelle}
 }
 
 \AdditionalFeaturesAndTraits{
@@ -194,79 +191,76 @@ Family heirloom: a wooden medallion depicting a unicorn
 \OrganizationName{\centering{Church of Elistraee}
 }
 
-\OrganizationSymbol{\includegraphics[width=3.9cm,height=3.9cm]{characters/images/eilistraee.png}
+\OrganizationSymbol{\includegraphics[width=3.9cm,height=3.9cm]{characters/images/eilistraee}
 }
-
 
 %Magic
 \SpellcastingClass{Paladin 6}
-\SpellcastingAbility{CHA}
-\SpellSaveDC{15}
-\SpellAttackBonus{+7}
+\SetSpellModifierCharisma{0}
 
 \FirstLevelSpellSlotsTotal{4}
 \SecondLevelSpellSlotsTotal{2}
 
 
 \begin{document}
-\newgeometry{left=0cm,right=0cm,top=0cm,bottom=0cm}
-\onecolumn
+    \newgeometry{left=0cm,right=0cm,top=0cm,bottom=0cm}
+    \onecolumn
 
 
 % CHARACTER PAGE
-\pdfbookmark[0]{Character Sheet}{Character Sheet}
-\rendercharactersheet
+    \pdfbookmark[0]{Character Sheet}{Character Sheet}
+    \rendercharactersheet
 
 % BACKSTORY PAGE
-\pdfbookmark[0]{Background Sheet}{Background Sheet}
-\renderbackgroundsheet
+    \pdfbookmark[0]{Background Sheet}{Background Sheet}
+    \renderbackgroundsheet
 
 % SPELLCASTING PAGE
-\pdfbookmark[0]{Spellcasting Sheet}{Spellcasting Sheet}
-\CantripSlotA{Dancing Lights (V/S)}
-\CantripSlotB{Faerie Fire (V/S) (Drow Magic) 1 /long rest}
-\CantripSlotC{Darkness (V/S) (Drow Magic) 1 /long rest}
-\FirstLevelSpellSlotA{Zephyr Strike (V/S/M) (Oath)}
-\FirstLevelSpellSlotAPrepared{True}
-\FirstLevelSpellSlotB{Speak With Animals (V/S) (Oath)}
-\FirstLevelSpellSlotBPrepared{True}
-\FirstLevelSpellSlotC{Bless (V/S/M/C)}
-\FirstLevelSpellSlotCPrepared{True}
-\FirstLevelSpellSlotD{Command (V)}
-\FirstLevelSpellSlotE{Compel Duel (V/S)}
-\FirstLevelSpellSlotF{Cure Wounds (V/S)}
-\FirstLevelSpellSlotG{Detect Evil And Good (V/S/C)}
-\FirstLevelSpellSlotH{Detect Poison And Disease (V/S)}
-\FirstLevelSpellSlotI{Divine Favor (V/S)}
-\FirstLevelSpellSlotJ{Heroism (V/S/M)}
-\FirstLevelSpellSlotJPrepared{True}
-\FirstLevelSpellSlotK{Protection From Evil And Good (V/S)}
-\FirstLevelSpellSlotKPrepared{True}
-\FirstLevelSpellSlotL{Purify Food And Drink (V/S)}
-\FirstLevelSpellSlotM{Searing Smite (V/S)}
-\FirstLevelSpellSlotN{Shield Of Faith (V/S)}
-\FirstLevelSpellSlotNPrepared{True}
-\FirstLevelSpellSlotO{Thunderous Smite (V/S)}
-\FirstLevelSpellSlotP{Wrathful Smite (V/S)}
+    \pdfbookmark[0]{Spellcasting Sheet}{Spellcasting Sheet}
+    \CantripSlotA{Dancing Lights (V/S)}
+    \CantripSlotB{Faerie Fire (V/S) (Drow Magic) 1 /long rest}
+    \CantripSlotC{Darkness (V/S) (Drow Magic) 1 /long rest}
+    \FirstLevelSpellSlotA{Zephyr Strike (V/S/M) (Oath)}
+    \FirstLevelSpellSlotAPrepared{True}
+    \FirstLevelSpellSlotB{Speak With Animals (V/S) (Oath)}
+    \FirstLevelSpellSlotBPrepared{True}
+    \FirstLevelSpellSlotC{Bless (V/S/M/C)}
+    \FirstLevelSpellSlotCPrepared{True}
+    \FirstLevelSpellSlotD{Command (V)}
+    \FirstLevelSpellSlotE{Compel Duel (V/S)}
+    \FirstLevelSpellSlotF{Cure Wounds (V/S)}
+    \FirstLevelSpellSlotG{Detect Evil And Good (V/S/C)}
+    \FirstLevelSpellSlotH{Detect Poison And Disease (V/S)}
+    \FirstLevelSpellSlotI{Divine Favor (V/S)}
+    \FirstLevelSpellSlotJ{Heroism (V/S/M)}
+    \FirstLevelSpellSlotJPrepared{True}
+    \FirstLevelSpellSlotK{Protection From Evil And Good (V/S)}
+    \FirstLevelSpellSlotKPrepared{True}
+    \FirstLevelSpellSlotL{Purify Food And Drink (V/S)}
+    \FirstLevelSpellSlotM{Searing Smite (V/S)}
+    \FirstLevelSpellSlotN{Shield Of Faith (V/S)}
+    \FirstLevelSpellSlotNPrepared{True}
+    \FirstLevelSpellSlotO{Thunderous Smite (V/S)}
+    \FirstLevelSpellSlotP{Wrathful Smite (V/S)}
 
-\SecondLevelSpellSlotA{Misty Step (V/S) (Oath)}
-\SecondLevelSpellSlotAPrepared{True}
-\SecondLevelSpellSlotB{Moonbeam (V/S/C) (Oath)}
-\SecondLevelSpellSlotBPrepared{True}
-\SecondLevelSpellSlotC{Aid (V/S/M)}
-\SecondLevelSpellSlotCPrepared{True}
-\SecondLevelSpellSlotD{Branding Smite (V/S)}
-\SecondLevelSpellSlotE{Find Steed (V/S/M)}
-\SecondLevelSpellSlotF{Lesser Restoration (V/S)}
-\SecondLevelSpellSlotG{Locate Object (V/S/M)}
-\SecondLevelSpellSlotH{Magic Weapon (V/S/M)}
-\SecondLevelSpellSlotI{Prayer Of Healing (V/S/C)}
-\SecondLevelSpellSlotIPrepared{True}
-\SecondLevelSpellSlotJ{Protection From Poison (V/S/C)}
-\SecondLevelSpellSlotK{Zone Of Truth (V/S/C)}
-\SecondLevelSpellSlotKPrepared{True}
+    \SecondLevelSpellSlotA{Misty Step (V/S) (Oath)}
+    \SecondLevelSpellSlotAPrepared{True}
+    \SecondLevelSpellSlotB{Moonbeam (V/S/C) (Oath)}
+    \SecondLevelSpellSlotBPrepared{True}
+    \SecondLevelSpellSlotC{Aid (V/S/M)}
+    \SecondLevelSpellSlotCPrepared{True}
+    \SecondLevelSpellSlotD{Branding Smite (V/S)}
+    \SecondLevelSpellSlotE{Find Steed (V/S/M)}
+    \SecondLevelSpellSlotF{Lesser Restoration (V/S)}
+    \SecondLevelSpellSlotG{Locate Object (V/S/M)}
+    \SecondLevelSpellSlotH{Magic Weapon (V/S/M)}
+    \SecondLevelSpellSlotI{Prayer Of Healing (V/S/C)}
+    \SecondLevelSpellSlotIPrepared{True}
+    \SecondLevelSpellSlotJ{Protection From Poison (V/S/C)}
+    \SecondLevelSpellSlotK{Zone Of Truth (V/S/C)}
+    \SecondLevelSpellSlotKPrepared{True}
 
 
-\renderhalfspellsheet
+    \renderhalfspellsheet
 
 \end{document}
