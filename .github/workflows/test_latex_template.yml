@@ -17,8 +17,8 @@ jobs:
     name: Check linting
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-python@v5
+    - uses: actions/checkout@v5
+    - uses: actions/setup-python@v6
     - uses: pre-commit/action@v3.0.1
 
 
@@ -28,10 +28,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: Check out code
-       uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+       uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
 
      - name: Set up Nix
-       uses: cachix/install-nix-action@c134e4c9e34bac6cab09cf239815f9339aaaf84e # v31
+       uses: cachix/install-nix-action@9280e7aca88deada44c930f1e2c78e21c3ae3edd # v31
        with:
         github_access_token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -46,7 +46,7 @@ jobs:
         cp -rL ./result/* ./archive
 
      - name: Install Imagemagick
-       uses: mfinelli/setup-imagemagick@v6
+       uses: mfinelli/setup-imagemagick@v7
 
      - name: Install Ghostscript
        id: install-ghostscript
@@ -77,10 +77,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check out code
-      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+      uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
 
     - name: Set up NixOS
-      uses: cachix/install-nix-action@c134e4c9e34bac6cab09cf239815f9339aaaf84e # v31
+      uses: cachix/install-nix-action@9280e7aca88deada44c930f1e2c78e21c3ae3edd # v31
       with:
         github_access_token: ${{ secrets.GITHUB_TOKEN }}
 
