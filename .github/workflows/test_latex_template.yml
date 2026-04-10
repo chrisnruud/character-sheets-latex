@@ -17,7 +17,7 @@ jobs:
     name: Check linting
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v5
+    - uses: actions/checkout@v6
     - uses: actions/setup-python@v6
     - uses: pre-commit/action@v3.0.1
 
@@ -28,10 +28,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: Check out code
-       uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
+       uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
 
      - name: Set up Nix
-       uses: cachix/install-nix-action@9280e7aca88deada44c930f1e2c78e21c3ae3edd # v31
+       uses: cachix/install-nix-action@96951a368ba55167b55f1c916f7d416bac6505fe # v31
        with:
         github_access_token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -66,7 +66,7 @@ jobs:
 
      - name: Archive build artifacts
        if: always() && steps.build-sheets-test.conclusion == 'success'
-       uses: actions/upload-artifact@v4
+       uses: actions/upload-artifact@v7
        with:
          name: test_result
          path: archive
@@ -77,10 +77,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check out code
-      uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
+      uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
 
     - name: Set up NixOS
-      uses: cachix/install-nix-action@9280e7aca88deada44c930f1e2c78e21c3ae3edd # v31
+      uses: cachix/install-nix-action@96951a368ba55167b55f1c916f7d416bac6505fe # v31
       with:
         github_access_token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -96,7 +96,7 @@ jobs:
        cp -r ./result/* ./archive
 
     - name: Archive build artifacts
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: result
         path: archive
